@@ -1,0 +1,6 @@
+# Para no tener problemas con la clonacion del repositorio
+
+1)  composer update
+2)  .env.example to .env
+3)  php artisan key:generate
+4)  php artisan serve
