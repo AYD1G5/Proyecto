@@ -1,5 +1,5 @@
 CODIGO;NOMBRE;CREDITOS;ESCUELA;AREA;PREREQUISITOS;POSTREQUISITOS;CATEGORIA;LABORATORIO;RESTRICCION;SEMESTRE
-348;Qu¡mica General;3;Ciencias;Qu¡mica General;0;352;Obligatoria;Si;0;1
+348;Qu¡mica General;3;Ciencias;Qu¡mica General;0;352,368;Obligatoria;Si;0;1
 101;Mate Basica 1;7;Ciencias;Mat‚matica B sica;0;103,147,352;Obligatoria;No;0;1
 69;T‚cnica Complementaria 1;3;Ciencias;T‚cnica Complementaria;0;73;Obligatoria;No;0;1
 39;Deportes 1;1;Ciencias;Deportes;0;0;Opcional;No;0;1
@@ -12,16 +12,32 @@ CODIGO;NOMBRE;CREDITOS;ESCUELA;AREA;PREREQUISITOS;POSTREQUISITOS;CATEGORIA;LABOR
 19;Social Humanistica 2;4;Ciencias;Social Humanistica;17;18;Obligatoria;No;0;2
 8;Idioma T‚cnico 2;2;Ciencias;Idioma T‚cnico;6;9;Obligatoria;No;0;2
 352;Qu¡mica 2;4;Ciencias;Qu¡mica General;101,147,348;0;Opcional;Si;0;3
-107;Mate Intermedia 1;10;Ciencias;Departamento de Matem tica ;103;608,732,170,112,114,152;Obligatoria;No;0;3
-150;F¡sica 1;6;Ciencias;Depto. de F¡sica;103,147;170,152;Obligatoria;Si;0;3
+107;Mate Intermedia 1;10;Ciencias;Departamento de Matem tica ;103;608,732,170,112,114,152,474;Obligatoria;No;0;3
+150;F¡sica 1;6;Ciencias;Depto. de F¡sica;103,147;170,152,474;Obligatoria;Si;0;3
 18;Filosof¡a de la Ciencia;3;Ciencias;Social Humanistica;19;0;Opcional;No;0;3
 9;Idioma T‚cnico 3;2;Ciencias;Idioma T‚cnico;8;11;Obligatoria;No;0;3
 2025;Pr ctica Inicial;0;Industrial;EPS;103;0;Obligatoria;No;0;3
 608;Introducci¢n a Proyectos Gerenciales;6;Mec nica Industrial;M‚todos Cuantitativos;107;0;Opcional;No;0;4
 73;Dibujo T‚cnico Mec nico;3;Ingenier¡a M‚canica;Complementaria;69;0;Obligatoria;Si;60;4
-732;Estad¡stica 1;5;Ciencias;Estadistica;107,5;0;Obligatoria;No;0;4
-170;Mec nica Anal¡tica 1;5;Ciencias;Depto. de F¡sica;107,150;0;Obligatoria;Si;0;4
-112;Mate Intermedia 2;5;Ciencias;Departamento de Matem tica;107;0;Obligatoria;No;0;4
-114;Mate Intermedia 3;5;Ciencias;Departamento de Matem tica;107;0;Obligatoria;No;0;4
-152;F¡sica 2;6;Ciencias;Depto. de F¡sica;107,150;0;Obligatoria;Si;0;4
+732;Estad¡stica 1;5;Ciencias;Estadistica;107,5;368,90,734,700;Obligatoria;No;0;4
+170;Mec nica Anal¡tica 1;5;Ciencias;Depto. de F¡sica;107,150;250,300,172;Obligatoria;Si;0;4
+112;Mate Intermedia 2;5;Ciencias;Departamento de Matem tica;107;116,118;Obligatoria;No;0;4
+114;Mate Intermedia 3;5;Ciencias;Departamento de Matem tica;107;90,250,300,172,116,118,200;Obligatoria;No;0;4
+152;F¡sica 2;6;Ciencias;Depto. de F¡sica;107,150;3684,52,200;Obligatoria;Si;0;4
 11;Idioma T‚cnico 4;2;Ciencias;Idioma T‚cnico;9;0;Obligatoria;No;0;4
+22;Psicolog¡a Industrial;3;Mec nica Industrial;Administrativa;0;658;Obligatoria;No;90;5
+650;Contabilidad 1;3;Mec nica Industrial;Administrativa;0;652,632;Obligatoria;Si;90;5
+662;Legislaci¢n 1;3;Mec nica Industrial;Administrativa;0;664;Obligatoria;No;90;5
+368;Principios de Metrolog¡a;3;Ingenier¡a Qu¡mica;Qu¡mica;732,152,348;0;Opcional;No;0;5
+90;Programaci¢n de Computadoras 1;3;Ciencias y Systemas;Programaci¢n;114,732;92;Obligatoria;No;0;5
+734;Estad¡stica 2;5;Ciencias;Estadistica;732;737,638,660,668;Obligatoria;No;0;5
+474;Introducci¢n a la Ingenier¡a Petrolera;3;CESEM;Pregrado;107,150;0;Opcional;No;90;5
+250;Mec nica de Fluidos;6;Ingenier¡a Civil;Hidra£lica;114,170;0;Obligatoria;No;0;5
+300;Resistencia de Materiales;5;Ingenier¡a Civil;Estructuras;114,170;302;Obligatoria;Si;0;5
+452;Ciencia de los Materiales;5;Ingenier¡a Mec nica;Materiales;152;520,454;Obligatoria;No;0;5
+172;Mec nica Anal¡tica 2;5;Ciencias;F¡sica;114,170;0;Opcional;No;0;5
+116;Mate Aplicada 3;5;Ciencias;Departamento de Matem tica;112,114;;Obligatoria;No;0;5
+118;Mate Aplicada 1;6;Ciencias;Departamento de Matem tica;112,114;122;Opcional;No;0;5
+28;Ecolog¡a;3;Ingenier¡a Qu¡mica;Qu¡mica;0;;Obligatoria;No;90;5
+700;Ingenier¡a Econ¢mica 1;5;Ingenier¡a Civil;Planeamiento;732;702;Obligatoria;No;0;5
+200;Ing. El‚ctrica 1;5;EIME;Ciencias Basicas y El‚ctronica;114,152;202;Obligatoria;Si;0;5
