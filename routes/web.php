@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/test', function(){
     return 'Hola mundo';
 });
+
+Route::resource('/asignacion', 'AsignacionController');
