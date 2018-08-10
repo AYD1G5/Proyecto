@@ -17,3 +17,35 @@ CODIGO;NOMBRE;CREDITOS;ESCUELA;AREA;PREREQUISITO;POSTREQUISITO;CATEGORIA;LABORAT
 107;Matemática Intermedia 1;10;Ciencias;Matemática Basica;103;732, 771, 112, 114, 152;Obligatoria;No;0;3
 150;Fisica 1;6;Ciencias;Fisica;103, 147;152;Obligatoria;Si;0;3
 9;Idioma Tecnico 3;2;Ciencias;Idioma Tecnico;8;11;Obligatoria;No;0;3
+732;Estadistica 1;5;Ciencias;Estadistica;107, 5;736, 14, 601, 722, 734, 700;Obligatoria;No;0;4
+796;Lenguajes Formales y de Programaci¢n;3;Ciencias y Sistemas;Ciencias de la Computacion;770, 795, 960;777, 772, 778, 773;Obligatoria;Si;0;4
+962;Matematica para Computacion 2;5;Ciencias y Sistemas;Matematica Basica;770, 795, 960;777, 772, 964;Obligatoria;No;0;4
+771;Introduccion a la Programacion y Computacion 2;5;Ciencias y Sistemas;Desarrollo de Software;770, 795, 960, 107;777, 772, 964;Obligatoria;Si;0;4
+10;Logica;2;Ciencias;Social Humanistica;19;18;Opcional;No;0;4
+112;Matematica Intermedia 2;5;Ciencias;Matematica Basica;107;116, 118;Obligatoria;No;0;4
+114;Matematica Intermedia 3;5;Ciencias;Matematica Basica;107;116, 118;Obligatoria;No;0;4
+152;Fisica 2;6;Ciencias;Fisica;107, 150;964, 368;Obligatoria;Si;0;4
+11;Idioma Tecnico 4;2;Ciencias;Idioma Tecnico;9;0;Obligatoria;No;0;4
+2025;Practica Inicial;0;Ciencias y Sistemas;EPS;103, 770;2036;Obligatoria;No;0;4
+736;Analisis Probabilistico;4;Ciencias;Estadistica;732;724;Obligatoria;No;0;5
+777;Organizacion de Lenguajes y Compiladores 1;4;Ciencias y Sistemas;Ciencias de la Computacion;771, 796, 962;7781, 2036;Obligatoria;Si;0;5
+964;Organizacion Computacional;3;Ciencias y Sistemas;Ciencias de la Computacion;152, 771, 962;778;Obligatoria;Si;0;5
+772;Estructura de Datos;5;Ciencias y Sistemas;Desarrollo de Software;771, 796, 962;722, 781, 773;Obligatoria;Si;0;5
+18;Filosofia de la Ciencia;3;Ciencias;Social Humanistica;19;0;Opcional;No;90;5
+116;Matematica Aplicada 3;5;Ciencias;Matematica Basica;112, 114;0;Obligatoria;No;0;5
+118;Matematica Aplicada 1;6;Ciencias;Matematica Basica;112, 114;122, 120;Obligatoria;No;0;5
+368;Principios de Metrologia;3;Ciencias;Quimica;732, 152, 348;0;Opcional;No;0;5
+650;Contabilidad 1;3;Ciencias;Administrativa;0;0;Opcional;No;90;5
+28;Ecologia;3;Ciencias;Quimica;0;0;Opcional;No;90;5
+787;Sistemas Organizacionales y Gerenciales 2;4;Ciencias y Sistemas;Metodolog¡a de Sistemas;786;0;Obligatoria;Si;0;10
+790;Emprendedores de Negocios Informaticos;4;Ciencias y Sistemas;Metodolog¡a de Sistemas;786;0;Opcional;No;0;10
+720;Modelacion y Simulacion 2;5;Ciencias y Sistemas;Metodolog¡a de Sistemas;729;0;Obligatoria;Si;0;10
+968;Inteligencia Artificial 2;4;Ciencias y Sistemas;Ciencias de la Computacion;972;0;Opcional;Si;0;10
+974;Redes de Nueva Generaci¢n;4;Ciencias y Sistemas;Ciencias de la Computacion;975;0;Opcional;No;0;10
+780;Software Avanzado;6;Ciencias y Sistemas;Desarrollo de Software;785;0;Obligatoria;Si;0;10
+789;Sistemas Aplicados 2;5;Ciencias y Sistemas;Desarrollo de Software;785, 788;0;Opcional;Si;0;10
+735;Auditoria de Proyectos de Software;5;Ciencias y Sistemas;Desarrollo de Software;785;0;Opcional;No;0;10
+7990;Seminario de Investigacion EPS;4;Ciencias y Sistemas;Ciencias Basicas;0;0;Opcional;No;225;10
+710;Planeamiento;6;Ciencias y Sistemas;Ciencias Basicas;0;0;Opcional;No;190;10
+706;Preparaci¢n y Evaluacion de Proyectos 1;4;Ciencias y Sistemas;Ciencias Basicas;700;0;Opcional;Si;190;10
+799;Seminario de Investigacion;3;Ciencias y Sistemas;Ciencias Basicas;798;0;Opcional;Si;220;10
