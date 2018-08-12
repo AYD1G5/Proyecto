@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePrerequisitoTable extends Migration
+class CreateCursoPrerequisitoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreatePrerequisitoTable extends Migration
      */
     public function up()
     {
-        Schema::create('prerequisito', function (Blueprint $table) {
+        Schema::create('curso_prerequisito', function (Blueprint $table) {
+            $table->integer('curso_pensum')->unsigned();
+            $table->foreign('curso_pensum')->references('id')->on('curso_pensum');
             $table->integer('codigo_curso')->unsigned();
             $table->foreign('codigo_curso')->references('codigo_curso')->on('curso');
-            $table->integer('codigo_prerequisito')->unsigned();
-            $table->foreign('codigo_prerequisito')->references('codigo_curso')->on('curso');
-            $table->primary(['codigo_curso', 'codigo_prerequisito']);
+            $table->primary(['curso_pensum', 'codigo_curso']);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreatePrerequisitoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prerequisito');
+        Schema::dropIfExists('curso_prerequisito');
     }
 }

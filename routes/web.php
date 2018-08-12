@@ -18,5 +18,7 @@ Route::get('/', function () {
 Route::get('/test', function(){
     return 'Hola mundo';
 });
+Auth::routes();
 
-Route::resource('/asignacion', 'AsignacionController');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/asignaciones', 'AsignacionController');

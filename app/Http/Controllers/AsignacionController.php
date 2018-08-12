@@ -1,8 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
+use App\Ciclo;
+use App\Anio;
+use App\Asignacion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class AsignacionController extends Controller
 {
@@ -13,7 +17,8 @@ class AsignacionController extends Controller
      */
     public function index()
     {
-        //
+        $asignaciones = Asignacion::all();
+        return View('asignaciones.index')->with('asignaciones', $asignaciones);
     }
 
     /**
@@ -23,7 +28,13 @@ class AsignacionController extends Controller
      */
     public function create()
     {
-        //
+        $asignacion = new Asignacion();
+        $estudiantes = User::all();
+        $ciclos = Ciclo::all();
+        return View('asignaciones.save')
+            ->with('asignacion', $asignacion)
+            ->with('ciclos', $ciclos)
+            ->with('method', 'POST');
     }
 
     /**
@@ -34,7 +45,12 @@ class AsignacionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $asignaciones = new Asignacion();
+        $asignaciones->estudiante_id = $request->estudiante_id;
+        $asignaciones->ciclo_id = $request->ciclo_id;
+        $asignaciones->anio = $request->anio;
+        $asignaciones->save();
+        return Redirect::to('asignaciones')->with('notice', 'Tarea guardada correctamente.');
     }
 
     /**
@@ -45,7 +61,9 @@ class AsignacionController extends Controller
      */
     public function show($id)
     {
-        //
+        $asignaciones = Asignacion::find($id);
+        return View('asignaciones.show')
+            ->with('asignaciones', $asignaciones);
     }
 
     /**
@@ -56,7 +74,13 @@ class AsignacionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $asignaciones = Asignacion::find($id);
+        $estudiantes = User::all();
+        $ciclos = Ciclo::all();
+        return View('asignaciones.save')
+            ->with('asignacion', $asignacion)
+            ->with('ciclos', $ciclos)
+            ->with('method', 'PUT');
     }
 
     /**
@@ -68,7 +92,12 @@ class AsignacionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $asignaciones = Asignacion::find($id);
+        $asignaciones->estudiante_id = $request->estudiante_id;
+        $asignaciones->ciclo_id = $request->ciclo_id;
+        $asignaciones->anio = $request->anio;
+        $asignaciones->save();
+        return Redirect::to('asignaciones')->with('notice', 'Tarea guardada correctamente.');
     }
 
     /**
@@ -79,6 +108,6 @@ class AsignacionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }

@@ -8,8 +8,14 @@ class Area extends Model
 {
     protected $table = 'area';
 
-    public function cursos()
-    {
-        return $this->hasMany('App\Curso');
-    }
+    protected $primaryKey='codigo_area';
+
+    protected $fillable = [
+        'codigo_area',
+        'nombre_area'
+    ];
+
+    protected $guarded = [
+
+    ];
 }

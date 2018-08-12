@@ -8,12 +8,14 @@ class Curso_asignacion extends Model
 {
     protected $table = 'curso_asignacion';
 
-    public function codigo_curso()
-    {
-        return $this->belongsTo('App\Curso');
-    }
-    public function codigo_asignacion()
-    {
-        return $this->belongsTo('App\Asignacion');
-    }
+    protected $primaryKey=['id_curso_pensum', 'asignacion_id'];
+
+    protected $fillable = [
+        'codigo_area',
+        'nombre_area'
+    ];
+
+    protected $guarded = [
+
+    ];
 }

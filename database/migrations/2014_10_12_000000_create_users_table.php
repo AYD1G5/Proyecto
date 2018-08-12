@@ -20,10 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('apellido');
             $table->string('rol');
             $table->string('direccion')->nullable();
-            $table->integer('pensum_estudiante_id')->unsigned();
-            $table->integer('curso_catedratico_id')->unsigned();
-            $table->foreign('pensum_estudiante_id')->references('id')->on('users'); 
-            $table->foreign('curso_catedratico_id')->references('id')->on('users'); 
             
             $table->string('email')->unique();
             $table->string('password');

@@ -14,11 +14,13 @@ class CreateCursoAsignacionTable extends Migration
     public function up()
     {
         Schema::create('curso_asignacion', function (Blueprint $table) {
-            $table->integer('codigo_curso')->unsigned();
-            $table->foreign('codigo_curso')->references('codigo_curso')->on('curso'); 
+            $table->integer('id_curso_pensum')->unsigned();
+            $table->foreign('id_curso_pensum')->references('id')->on('curso_pensum'); 
             $table->integer('asignacion_id')->unsigned();
             $table->foreign('asignacion_id')->references('id')->on('asignacion'); 
-            $table->primary(['codigo_curso', 'asignacion_id']);
+            $table->integer('catedratico_id')->unsigned();
+            $table->foreign('catedratico_id')->references('id')->on('users'); 
+            $table->primary(['id_curso_pensum', 'asignacion_id']);
             $table->timestamps();
         });
     }
