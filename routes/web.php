@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::get('/cargamasiva', function (){
     return view('subir');
+    
 });
 
 Route::post('/masiva', function (Request $request){
