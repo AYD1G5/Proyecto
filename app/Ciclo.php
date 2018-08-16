@@ -8,8 +8,14 @@ class Ciclo extends Model
 {
     protected $table = 'ciclo';
 
-    public function asignaciones()
-    {
-        return $this->hasMany('App\Asignacion');
-    }
+    protected $primaryKey='codigo_ciclo';
+    
+    protected $fillable = [
+        'codigo_ciclo', 
+        'nombre_ciclo',
+    ];
+
+    protected $guarded = [
+
+    ];
 }

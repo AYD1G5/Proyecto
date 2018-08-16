@@ -8,21 +8,15 @@ class Pensum extends Model
 {
     protected $table = 'pensum';
 
-    public function pensum_cursos()
-    {
-        return $this->hasMany('App\Pensum_curso');
-    }
-    public function pensums_estudiantes()
-    {
-        return $this->hasMany('App\Pensum_estudiante');
-    }
-    public function asignaciones_temporales()
-    {
-        return $this->hasMany('App\Asignacion_temporal');
-    }
+    protected $primaryKey='codigo_pensum';
     
-    public function codigo_carrera()
-    {
-        return $this->belongsTo('App\Carrera');
-    }
+    protected $fillable = [
+        'codigo_pensum',
+        'nombre_pensum',
+        'codigo_carrera',
+    ];
+
+    protected $guarded = [
+
+    ];
 }

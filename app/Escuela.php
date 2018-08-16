@@ -7,9 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Escuela extends Model
 {
     protected $table = 'escuela';
+    
+    protected $primaryKey='codigo_escuela';
+    
+    protected $fillable = [
+        'codigo_escuela', 
+        'nombre_escuela',
+    ];
 
-    public function curso()
-    {
-        return $this->hasMany('App\Curso');
-    }
+    protected $guarded = [
+
+    ];
 }

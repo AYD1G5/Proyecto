@@ -8,17 +8,14 @@ class Asignacion_temporal extends Model
 {
     protected $table = 'asignacion_temporal';
 
-    public function curso_asignaciones_temporales()
-    {
-        return $this->hasMany('App\Curso_asignacion_temporal');
-    }
+    protected $primaryKey='id';
+    
+    protected $fillable = [
+        'estudiante_id',
+        'codigo_pensum',
+    ];
 
-    public function codigo_pensum()
-    {
-        return $this->belongsTo('App\Pensum');
-    }
-    public function id_estudiante()
-    {
-        return $this->belongsTo('App\User');
-    }
+    protected $guarded = [
+
+    ];
 }

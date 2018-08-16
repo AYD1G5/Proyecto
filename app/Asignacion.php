@@ -8,17 +8,15 @@ class Asignacion extends Model
 {
     protected $table = 'asignacion';
 
-    public function curso_asignaciones()
-    {
-        return $this->hasMany('App\Curso_asignacion');
-    }
+    protected $primaryKey='id';
+    
+    protected $fillable = [
+        'estudiante_id', 
+        'codigo_ciclo',
+        'anio',
+    ];
 
-    public function codigo_ciclo()
-    {
-        return $this->belongsTo('App\Ciclo');
-    }
-    public function id_estudiante()
-    {
-        return $this->belongsTo('App\User');
-    }
+    protected $guarded = [
+
+    ];
 }

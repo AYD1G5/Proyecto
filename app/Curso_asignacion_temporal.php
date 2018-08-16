@@ -6,14 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Curso_asignacion_temporal extends Model
 {
-    protected $table = 'ciclo_asignacion_temporal';
+    protected $table = 'curso_asignacion_temporal';
 
-    public function codigo_curso()
-    {
-        return $this->belongsTo('App\Curso');
-    }
-    public function codigo_asignacion_temporal()
-    {
-        return $this->belongsTo('App\Asignacion_temporal');
-    }
+    protected $primaryKey=['id_curso_pensum', 'asig_t_id'];
+    
+    protected $fillable = [
+        'id_curso_pensum', 
+        'asig_t_id',
+        'catedratico_id'
+    ];
+
+    protected $guarded = [
+
+    ];
 }

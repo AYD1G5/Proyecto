@@ -11,8 +11,9 @@ class Curso_asignacion extends Model
     protected $primaryKey=['id_curso_pensum', 'asignacion_id'];
 
     protected $fillable = [
-        'codigo_area',
-        'nombre_area'
+        'id_curso_pensum', 
+        'asignacion_id',
+        'catedratico_id'
     ];
 
     protected $guarded = [

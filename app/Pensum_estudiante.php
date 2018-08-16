@@ -8,12 +8,14 @@ class Pensum_estudiante extends Model
 {
     protected $table = 'pensum_estudiante';
 
-    public function codigo_pensum()
-    {
-        return $this->belongsTo('App\Pensum');
-    }
-    public function id_estudiante()
-    {
-        return $this->belongsTo('App\User');
-    }
+    protected $primaryKey=['estudiante_id', 'codigo_pensum'];
+    
+    protected $fillable = [
+        'codigo_pensum',
+        'estudiante_id',
+    ];
+
+    protected $guarded = [
+
+    ];
 }

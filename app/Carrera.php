@@ -8,8 +8,14 @@ class Carrera extends Model
 {
     protected $table = 'carrera';
 
-    public function pensums()
-    {
-        return $this->hasMany('App\Pensum');
-    }
+    protected $primaryKey='codigo_carrera';
+    
+    protected $fillable = [
+        'codigo_carrera', 
+        'nombre_carrera',
+    ];
+
+    protected $guarded = [
+
+    ];
 }

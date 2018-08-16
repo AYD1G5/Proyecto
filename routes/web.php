@@ -21,4 +21,12 @@ Route::get('/test', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/asignaciones', 'AsignacionController');
+
+Route::group( ['middleware' => 'auth' ], function()
+{
+    Route::resource('/asignaciones', 'AsignacionController');
+});
+
+Route::get('/prueba/{id_curso}/{id_carrera}/{id_usuario}', function($id_curso, $id_carrera, $id_usuario){
+    return 'Hola mundo'.$id_curso.$id_carrera.$id_usuario;
+});
